@@ -23,8 +23,7 @@ public class Panier {
    * @param produit  Produit à ajouter au panier.
    * @param quantite Quantité de produit à ajouter au panier.
    * @return Ligne du panier ajoutée ou modifiée.
-   * @exception IllegalArgumentException Quantité non valide (négative
-   *                                     ou nulle)
+   * @exception IllegalArgumentException Quantité non valide (négative ou nulle)
    */
   public Ligne ajouter(Produit produit, int quantite) {
     var ligne = this.lignes.get(produit);
